@@ -1,0 +1,159 @@
+
+.cardContainer {
+  display: flex;
+  gap: 10px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 150px;
+  overflow-x: hidden;
+}
+
+.profilepage {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-row {
+  justify-content: center;
+  width: 90%;
+}
+
+.profile {
+  display: flex; /* Flex 컨테이너로 설정 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  padding-left: 0px;
+}
+
+.mySwiper {
+  width: 100%; /* 슬라이드의 부모인 mySwiper 클래스의 너비를 100%로 설정 */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  width: 250px !important;
+  /* height: 500px !important; */
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: start !important;
+  left: 1% !important;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.plusbutton {
+  border: 1px solid black;
+  border-radius: 20px;
+  visibility: inherit !important;
+  cursor: pointer;
+}
+
+.plant {
+  border-radius: 2ch;
+  background-color: white;
+  padding-top: 25px;
+  margin-bottom: 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-left {
+  display: flex;
+}
+.plant-btn {
+  font-size: 25px;
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.plant-btn.selected {
+  font-weight: bold;
+  color: black;
+  /*text-shadow:0 2px 10px rgba(0, 0, 0, 0.2);*/
+}
+
+.plant-btn:not(.selected) {
+  color: rgb(168, 168, 168);
+}
+
+.signout-btn {
+  font-size: 16px;
+  border: green solid 1px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: gray;
+  padding: 0 10px;
+}
+
+.signout-btn:hover {
+  font-size: 16px;
+  border: rgb(255, 255, 255) solid 1px;
+  border-radius: 30px;
+  background-color: #406e48;
+  color: rgb(255, 255, 255);
+}
+
+.plantcard_new {
+  position: relative;
+  width: 250px;
+  height: 420px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1c5222;
+  color: #ffffff;
+}
+.plantcard_new:hover {
+  .new_register {
+    border: #ffffff solid 1px;
+    padding: 10px 30px 0;
+    border-radius: 50px;
+  }
+  .new_register:hover {
+    background-color: #ffffff;
+    color: #1c5222;
+  }
+}
+
+.swiper_total {
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  left: -60px; /* 왼쪽에 고정 */
+}
+
+.swiper-button-next {
+  right: -60px; /* 오른쪽에 고정 */
+}

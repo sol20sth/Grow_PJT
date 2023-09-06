@@ -1,0 +1,17 @@
+.diary_total {
+  // background-image: linear-gradient(to right, #cfead0, #77a98d);
+  min-height: 100vh;
+}
+.centered-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.diary-container {
+  display: flex;
+  height: 100%;
+}
